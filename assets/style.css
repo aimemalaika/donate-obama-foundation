@@ -90,3 +90,46 @@
     font-weight: 200;
     color: black;
 }
+.link-bg-1{
+    background-image: url(/assets/img/bg-1.webp);
+}
+.link-bg-2{
+    background-image: url(/assets/img/bg-2.webp);
+}
+.link-bg-3{
+    background-image: url(/assets/img/bg-3.webp);
+}
+.link-bg-4{
+    background-image: url(/assets/img/bg-4.webp);
+}
+.link-bg-5{
+    background-image: url(/assets/img/bg-5.webp);
+}
+.link-bg-6{
+    background-image: url(/assets/img/bg-6.webp);
+}
+.link-bg-1,.link-bg-2,.link-bg-3,.link-bg-4,.link-bg-5,.link-bg-6{
+    background-size: cover;
+    width: 20%;
+    height: 22vh;
+}
+.gallery-images ul{
+    list-style-type: none;
+    display: inline-flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.donationperprice{
+    background: #6bb8ab;
+    color: white;
+}
+.donationperprice:hover{
+    animation: blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+    0%		{ background-color: #04a1d5;}
+    30%		{ background-color: #10c018;}
+    60%		{ background-color: #1056c0;}
+    100%	{ background-color: #6bb8ab;}
+}
