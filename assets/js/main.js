@@ -21,3 +21,12 @@ $('#modal-container').click(function () {
     $(this).addClass('out');
     $('body').removeClass('modal-active');
 });
+
+$('#leftbarmenue').mouseover(function () {
+    $(this).removeClass('shinking')
+    $(this).addClass('expended')
+});
+
+$( "#leftbarmenue" ).mouseleave(function() {
+    console.log('execute');
+});

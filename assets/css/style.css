@@ -19,6 +19,20 @@
     height: 100%;
 }
 
+.leftsideisp.expended {
+    width: 20%;
+    border: 1px solid #fff;
+    position: fixed;
+    height: 100%;
+    z-index: 10000000;
+    background: #fff;
+}
+
+.expended img {
+    width: 80%;
+    margin: 0 10%;
+}
+
 .rigthsidedisp {
     width: 95%;
     margin-left: 5%;
@@ -49,7 +63,8 @@
     padding: 0;
 }
 
-.shinking .menues li {
+.shinking .menues li,
+.expended .menues li {
     text-decoration: none;
     padding: 30px 0;
     border-bottom: 1px solid #e3dfdf;
@@ -59,6 +74,16 @@
 .shinking .menues li a {
     text-decoration: none;
     display: none;
+}
+
+.expended .menues li a {
+    display: block;
+    display: block;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
 }
 
 .contributionbtn {
@@ -290,20 +315,24 @@
     }
 }
 
-.h50{
+.h50 {
     height: 50vh;
 }
-.bgsmoke{
+
+.bgsmoke {
     background: #dfe4e4;
 }
-.bgminwhite{
+
+.bgminwhite {
     background: #f6f8f8;
 }
-.text-upcomm{
+
+.text-upcomm {
     position: absolute;
     bottom: 55%;
     text-align: left;
 }
+
 .blockedrightimage {
     position: absolute;
     width: 30%;
@@ -318,4 +347,12 @@
     right: 2%;
     font-weight: bold;
     cursor: pointer !important;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #000;
 }
