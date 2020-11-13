@@ -4,8 +4,11 @@
 
 .header-title-banner-bg {
     background-image: url(img/obamabg.webp);
-    height: 60vh;
+    height: 50vh;
     background-size: cover;
+    background-position: center;
+    display: table;
+    width: 100%;
 }
 
 .leftsideisp {
@@ -21,10 +24,32 @@
 }
 
 .bannertext {
-    height: 60vh;
+    height: 50vh;
     display:table-cell;
     vertical-align:middle;
 }
 .bannertext p{
     width: 100%;
+}
+.logo{
+    overflow: hidden;
+    padding: 30px 0;
+    border-bottom: 2px solid #e3dfdf;
+}
+.shinking .logo img{
+    height: 60px;
+}
+.menues{
+    width: 100%;
+    padding: 0;
+}
+.shinking .menues li {
+    text-decoration: none;
+    padding: 30px 0;
+    border-bottom: 1px solid #e3dfdf;
+    width: 100%;
+}
+.shinking .menues li a{
+    text-decoration: none;
+    display: none;
 }
