@@ -1,0 +1,30 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-title-banner-bg {
+    background-image: url(img/obamabg.webp);
+    height: 60vh;
+    background-size: cover;
+}
+
+.leftsideisp {
+    width: 5%;
+    border: 1px solid #fff;
+    position: fixed;
+    height: 100%;
+}
+
+.rigthsidedisp {
+    width: 95%;
+    margin-left: 5%;
+}
+
+.bannertext {
+    height: 60vh;
+    display:table-cell;
+    vertical-align:middle;
+}
+.bannertext p{
+    width: 100%;
+}
