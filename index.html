@@ -10,8 +10,8 @@
   <title>Donate - Obama FOUNDATION</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
-  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/style.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,10 +36,12 @@
             <p class="display-4 mb-0 font-weight-bold text-white">Changemakers</p>
             <div class="col-md-6 mx-auto">
               <div class="d-flex justify-content-between mt-5">
-                <button class="btn text-white font-weight-normal col-md-5 contributionbtn">BECOME A MONTHLY
-                  CONTRIBUTOR</button>
-                <button class="btn text-white font-weight-normal col-md-5 contributionbtn">MAKE A ONE-TIME
-                  CONTRIBUTION</button>
+                <a href="#monthly-contrubition" id="mothly"
+                  class="btn text-white font-weight-normal col-md-5 contributionbtn">BECOME A MONTHLY
+                  CONTRIBUTOR</a>
+                <a href="#one-time-contrubition" id="onetime"
+                  class="btn text-white font-weight-normal col-md-5 contributionbtn">MAKE A ONE-TIME
+                  CONTRIBUTION</a>
               </div>
             </div>
           </div>
@@ -50,9 +52,9 @@
             <p class="lead">Become a monthly contributor and keep an eye on your mailbox for a token of appreciation
               sent straight from the Obama Foundation’s Chicago HQ. Choose your contribution below.</p>
           </div>
-          <div class="separators col-md-10 mx-auto">
+          <div class="separators col-md-10 mx-auto" id="monthly-contrubition">
             <div class="card-deck">
-              <div class="card">
+              <div class="card donation-month-details">
                 <div class="card-body text-center">
                   <h5 class="card-title">$100 Mothly</h5>
                   <p class="card-text display-4 font-weight-bold">$100</p>
@@ -60,7 +62,7 @@
                 </div>
                 <img class="card-img-top" src="assets/img/2.webp" alt="Card image cap">
               </div>
-              <div class="card">
+              <div class="card donation-month-details">
                 <div class="card-body text-center">
                   <h5 class="card-title">$44 Mothly</h5>
                   <p class="card-text display-4 font-weight-bold">$44</p>
@@ -68,7 +70,7 @@
                 </div>
                 <img class="card-img-top" src="assets/img/3.webp" alt="Card image cap">
               </div>
-              <div class="card">
+              <div class="card donation-month-details">
                 <div class="card-body text-center">
                   <h5 class="card-title">$25 Mothly</h5>
                   <p class="card-text display-4 font-weight-bold">$25</p>
@@ -76,7 +78,7 @@
                 </div>
                 <img class="card-img-top" src="assets/img/4.webp" alt="Card image cap">
               </div>
-              <div class="card">
+              <div class="card donation-month-details">
                 <div class="card-body text-center">
                   <h5 class="card-title">$10 Mothly</h5>
                   <p class="card-text display-4 font-weight-bold">$10</p>
@@ -87,17 +89,20 @@
             </div>
           </div>
           <div class="separators col-md-8 mx-auto">
-            <p class="font-weight-light">Whether you’ve been a part of this community from the start, or you’re just getting started, you belong here. With your support, we can build a Presidential Center that will revitalize the South Side of Chicago, unite a new generation of leaders to move us forward, and work together to change history once more.</p>
+            <p class="font-weight-light">Whether you’ve been a part of this community from the start, or you’re just
+              getting started, you belong here. With your support, we can build a Presidential Center that will
+              revitalize the South Side of Chicago, unite a new generation of leaders to move us forward, and work
+              together to change history once more.</p>
             <p class="font-weight-light">Help empower emerging leaders around the world. Make a one-time gift today:</p>
           </div>
           <div class="separators col-md-8 mx-auto">
             <h1 class="text-center font-weight-bold">MAKE A ONE-TIME GIFT TODAY</h1>
-            <div class="row col-md-12 text-center mt-5">
+            <div class="row col-md-12 text-center mt-5" id="one-time-contrubition">
               <div class="mb-3 col-md-4">
                 <button class="btn donationperprice col-md-12 p-3 donationbtn">$10</button>
               </div>
               <div class="mb-3 col-md-4">
-                <button class="btn donationperprice col-md-12 p-3 donationbtn">$25</button>  
+                <button class="btn donationperprice col-md-12 p-3 donationbtn">$25</button>
               </div>
               <div class="mb-3 col-md-4">
                 <button class="btn donationperprice col-md-12 p-3 donationbtn">$50</button>
@@ -112,13 +117,14 @@
                 <button class="btn donationperprice col-md-12 p-3 donationbtn">$500</button>
               </div>
               <div class="col-md-8">
-                <input type="text" class="form-control font-weight-light text-dark" placeholder="Name your own amount, may be $44?">
+                <input type="text" class="form-control font-weight-light text-dark"
+                  placeholder="Name your own amount, may be $44?">
               </div>
               <div class="col-md-4">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="autoSizingCheck">
                   <label class="form-check-label" for="autoSizingCheck">
-                    I'll cover my transaction fees. 
+                    I'll cover my transaction fees.
                   </label>
                 </div>
               </div>
@@ -141,8 +147,38 @@
       </div>
     </div>
   </div>
-  <script src="assets/jquery/jquery.slim.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <div id="modal-container">
+    <div class="modal-background">
+      <div class="modal h100">
+          <p class="closeme">X</p>
+          <img class="blockedrightimage" src="/assets/img/Field-Note_close-up-10-tier.webp" alt="">
+          <div class="h50 bgminwhite">
+            <div class="col-md-6 row text-upcomm pl-3">
+                <div class="col-md-8">
+                  <p class="text-uppercase">Membership Level:</p>
+                  <p><span class="display-4 font-weight-bold" id="price">$50</span> Monthly</p>
+                </div>
+                <div class="col-md-4">
+                  <button class="btn btn-info text-uppercase col-md-7 mt-5">i'm in</button>
+                </div>
+            </div>
+          </div>
+          <div class="h50 bgsmoke">
+            <div class="col-md-6 pt-3 pl-3 text-left">
+              <p class="text-muted">
+                Donate $25 a month and you’ll get exclusive membership gifts including a single pack of our popular and exclusive Field Notes and a limited-edition official Obama sticker pack! You’ll also be eligible for members-only chances to attend Foundation events.
+              </p>
+              <p class="text-muted">
+                Your pack will arrive within a few weeks and your monthly donation will continue to support our work until cancelled.
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
