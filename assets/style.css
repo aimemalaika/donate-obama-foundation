@@ -25,34 +25,54 @@
 
 .bannertext {
     height: 50vh;
-    display:table-cell;
-    vertical-align:middle;
+    display: table-cell;
+    vertical-align: middle;
 }
-.bannertext p{
+
+.bannertext p {
     width: 100%;
 }
-.logo{
+
+.logo {
     overflow: hidden;
     padding: 30px 0;
     border-bottom: 2px solid #e3dfdf;
 }
-.shinking .logo img{
+
+.shinking .logo img {
     height: 60px;
 }
-.menues{
+
+.menues {
     width: 100%;
     padding: 0;
 }
+
 .shinking .menues li {
     text-decoration: none;
     padding: 30px 0;
     border-bottom: 1px solid #e3dfdf;
     width: 100%;
 }
-.shinking .menues li a{
+
+.shinking .menues li a {
     text-decoration: none;
     display: none;
 }
-.contributionbtn{
+
+.contributionbtn {
     background: #2a2970 !important;
+}
+
+.card img {
+    padding: 0 20px 20px 20px;
+}
+
+.card {
+    background: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-title{
+    font-weight: 200;
 }
