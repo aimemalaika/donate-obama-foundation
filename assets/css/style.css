@@ -313,8 +313,9 @@
 
 .closeme {
     position: absolute;
-    font-size: 2em;
+    font-size: 2em !important;
     top: 3%;
     right: 2%;
     font-weight: bold;
+    cursor: pointer !important;
 }
