@@ -356,10 +356,21 @@
     border-right: 10px solid transparent;
     border-top: 20px solid #000;
 }
-.bg-paypage-banner{
+
+.bg-paypage-banner {
     background-image: url(/assets/img/20878382126_c9371ef861_o_1400x400_acf_cropped.jpg);
     height: 18vh;
     background-size: cover;
     background-position: center;
     width: 100%;
+}
+
+.separatorsLines {
+    width: 47%;
+    margin: 0 0 27px 0;
+}
+
+.ortxt {
+    width: 6%;
+    text-align: center;
 }
