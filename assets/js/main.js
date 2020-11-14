@@ -28,5 +28,6 @@ $('#leftbarmenue').mouseover(function () {
 });
 
 $( "#leftbarmenue" ).mouseleave(function() {
-    console.log('execute');
+    $(this).removeClass('expended')
+    $(this).addClass('shinking')
 });

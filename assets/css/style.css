@@ -66,7 +66,7 @@
 .shinking .menues li,
 .expended .menues li {
     text-decoration: none;
-    padding: 30px 0;
+    padding: 30px;
     border-bottom: 1px solid #e3dfdf;
     width: 100%;
 }
