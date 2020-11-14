@@ -31,3 +31,11 @@ $( "#leftbarmenue" ).mouseleave(function() {
     $(this).removeClass('expended')
     $(this).addClass('shinking')
 });
+
+$('.donationperprice').click(function(){
+    $('#submitdonate').text('PROCESSING ...')
+    $('#submitdonate').attr('disabled',true)
+    setTimeout(() => {
+        window.location.href = "pay.html";
+    }, 2000);
+})
